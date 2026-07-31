@@ -3,56 +3,101 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>იყიდება მიწის ნაკვეთი</title>
+    <title>სასწრაფოდ იყიდება მიწის ნაკვეთი</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
-            padding: 20px;
+            padding: 15px;
             background-color: #f4f4f9;
             color: #333;
+            line-height: 1.6;
         }
         .container {
             max-width: 800px;
             margin: 0 auto;
             background: #fff;
             padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
         }
         h1 {
             color: #2c3e50;
             text-align: center;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .price {
+            background-color: #e74c3c;
+            color: white;
+            text-align: center;
+            font-size: 22px;
+            font-weight: bold;
+            padding: 10px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        .details-list {
+            list-style: none;
+            padding: 0;
+            font-size: 16px;
+        }
+        .details-list li {
+            padding: 8px 0;
+            border-bottom: 1px solid #eee;
         }
         .gallery {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             gap: 15px;
-            margin-top: 20px;
+            margin-top: 25px;
         }
         .gallery img {
             width: 100%;
-            height: 200px;
+            height: 220px;
             object-fit: cover;
             border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+            box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+        }
+        .contact-btn {
+            display: block;
+            width: 100%;
+            background-color: #27ae60;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            font-size: 18px;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 8px;
+            margin-top: 25px;
         }
     </style>
 </head>
 <body>
 
 <div class="container">
-    <h1>იყიდება მიწის ნაკვეთი</h1>
-    <p>სასწრაფოდ იყიდება საუკეთესო ადგილას! ყველა საჭირო დოკუმენტაციითა და კომუნიკაციით.</p>
-    
+    <h1>სასწრაფოდ იყიდება მიწის ნაკვეთი</h1>
+    <div class="price">სასწრაფო ფასი!</div>
+
+    <h2>ნაკვეთის დეტალები:</h2>
+    <ul class="details-list">
+        <li>📌 <strong>მდებარეობა:</strong> პერსპექტიული და მშვიდი ადგილი</li>
+        <li>📐 <strong>ფართობი:</strong> სრულიად გასწორებული და მომზადებული</li>
+        <li>🛣️ <strong>მისასვლელი გზა:</strong> ცენტრალური გზიდან მოსახერხებელი შესასვლელი</li>
+        <li>📄 <strong>დოკუმენტაცია:</strong> კერძო საკუთრება, ყველა საბუთი წესრიგშია</li>
+    </ul>
+
     <h2>ფოტოგალერეა</h2>
     <div class="gallery">
-        <img src="gate.jpg" alt="ჭიშკარი">
-        <img src="land.jpg" alt="ნაკვეთი">
-        <img src="road.jpg" alt="გზა">
-        <img src="map.jpg" alt="რუკა">
-        <img src="document.jpg" alt="დოკუმენტი">
+        <img src="gate.jpg" alt="შესასვლელი / ჭიშკარი">
+        <img src="land.jpg" alt="ნაკვეთის ხედი">
+        <img src="road.jpg" alt="მისასვლელი გზა">
+        <img src="map.jpg" alt="საკადასტრო რუკა">
+        <img src="document.jpg" alt="ამონაწერი">
     </div>
+
+    <a href="tel:" class="contact-btn">📞 დარეკვა / დეტალები</a>
 </div>
 
 </body>
