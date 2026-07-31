@@ -3,102 +3,131 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>სასწრაფოდ იყიდება მიწის ნაკვეთი</title>
+    <title>იყიდება მიწის ნაკვეთი ფარცხანაყანევში</title>
     <style>
+        * { box-sizing: border-box; }
         body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 15px;
-            background-color: #f4f4f9;
-            color: #333;
-            line-height: 1.6;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0; padding: 0;
+            background-color: #f4f7f6; color: #333; line-height: 1.6;
         }
+        header {
+            background: linear-gradient(135deg, #1b5e20, #2e7d32);
+            color: white; text-align: center; padding: 50px 20px;
+        }
+        header h1 { margin: 0; font-size: 2.2em; }
+        header p { font-size: 1.2em; opacity: 0.9; margin-top: 10px; }
         .container {
-            max-width: 800px;
-            margin: 0 auto;
-            background: #fff;
-            padding: 20px;
-            border-radius: 12px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            max-width: 850px; margin: -30px auto 40px auto;
+            background: white; padding: 30px; border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
         }
-        h1 {
-            color: #2c3e50;
-            text-align: center;
-            font-size: 24px;
-            margin-bottom: 10px;
+        .price-tag {
+            background-color: #e8f5e9; border: 2px solid #2e7d32;
+            color: #1b5e20; padding: 15px; border-radius: 10px;
+            text-align: center; font-size: 22px; font-weight: bold; margin-bottom: 25px;
         }
-        .price {
-            background-color: #e74c3c;
-            color: white;
-            text-align: center;
-            font-size: 22px;
-            font-weight: bold;
-            padding: 10px;
-            border-radius: 8px;
-            margin-bottom: 20px;
+        .badges {
+            display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 25px; justify-content: center;
         }
-        .details-list {
-            list-style: none;
-            padding: 0;
-            font-size: 16px;
+        .badge {
+            background-color: #f0f4f8; color: #102a43; padding: 8px 14px;
+            border-radius: 20px; font-size: 14px; font-weight: 600;
         }
-        .details-list li {
-            padding: 8px 0;
-            border-bottom: 1px solid #eee;
+        h2 {
+            color: #2e7d32; border-bottom: 2px solid #e8f5e9;
+            padding-bottom: 8px; margin-top: 35px;
         }
         .gallery {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 15px;
-            margin-top: 25px;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 15px; margin-top: 20px;
         }
         .gallery img {
-            width: 100%;
-            height: 220px;
-            object-fit: cover;
-            border-radius: 8px;
-            box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+            width: 100%; height: 200px; object-fit: cover;
+            border-radius: 8px; border: 1px solid #ddd;
+            transition: transform 0.2s;
+        }
+        .gallery img:hover { transform: scale(1.03); }
+        .features { list-style: none; padding: 0; }
+        .features li { padding: 10px 0; border-bottom: 1px solid #eee; font-size: 17px; }
+        .infra-grid {
+            display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 12px; margin-top: 15px;
+        }
+        .infra-item {
+            background-color: #f9f9f9; padding: 12px; border-radius: 8px;
+            border-left: 4px solid #2e7d32; font-size: 15px; font-weight: 500;
+        }
+        .highlight-box {
+            background-color: #e3f2fd; border-left: 5px solid #2196f3;
+            padding: 18px; margin: 25px 0; border-radius: 6px;
         }
         .contact-btn {
-            display: block;
-            width: 100%;
-            background-color: #27ae60;
-            color: white;
-            text-align: center;
-            padding: 15px 0;
-            font-size: 18px;
-            font-weight: bold;
-            text-decoration: none;
-            border-radius: 8px;
-            margin-top: 25px;
+            display: block; width: 100%; text-align: center;
+            background-color: #2e7d32; color: white; padding: 16px 0;
+            font-size: 22px; text-decoration: none; border-radius: 10px;
+            margin-top: 30px; font-weight: bold;
+            box-shadow: 0 4px 12px rgba(46, 125, 50, 0.3);
         }
+        .contact-btn:hover { background-color: #1b5e20; }
     </style>
 </head>
 <body>
 
-<div class="container">
-    <h1>სასწრაფოდ იყიდება მიწის ნაკვეთი</h1>
-    <div class="price">სასწრაფო ფასი!</div>
+    <header>
+        <h1>იყიდება საინვესტიციო მიწის ნაკვეთი გზის პირას!</h1>
+        <p>წყალტუბო, სოფ. ფარცხანაყანევი (პლატფორმის უბანი)</p>
+    </header>
 
-    <h2>ნაკვეთის დეტალები:</h2>
-    <ul class="details-list">
-        <li>📌 <strong>მდებარეობა:</strong> პერსპექტიული და მშვიდი ადგილი</li>
-        <li>📐 <strong>ფართობი:</strong> სრულიად გასწორებული და მომზადებული</li>
-        <li>🛣️ <strong>მისასვლელი გზა:</strong> ცენტრალური გზიდან მოსახერხებელი შესასვლელი</li>
-        <li>📄 <strong>დოკუმენტაცია:</strong> კერძო საკუთრება, ყველა საბუთი წესრიგშია</li>
-    </ul>
+    <div class="container">
+        
+        <div class="price-tag">
+            💰 ფასი: $9 / კვ.მ &nbsp;|&nbsp; 📐 სრული ფართობი: 2,528 კვ.მ
+        </div>
 
-    <h2>ფოტოგალერეა</h2>
-    <div class="gallery">
-        <img src="road.jpg" alt="მისასვლელი გზა">
-        <img src="gate.jpg" alt="შესასვლელი / ჭიშკარი">
-        <img src="land.jpg" alt="ნაკვეთის ხედი">
-        <img src="map.jpg" alt="საკადასტრო რუკა">
-        <img src="document.jpg" alt="ამონაწერი">
+        <div class="badges">
+            <span class="badge">🚗 ცენტრალური გზის პირას</span>
+            <span class="badge">✈️ აეროპორტიდან 7 კმ</span>
+            <span class="badge">✅ საბუთები წესრიგშია</span>
+            <span class="badge">🏗️ მშენებლობის ნებართვით</span>
+            <span class="badge">💼 გამოდგება კომერციულად</span>
+        </div>
+
+        <h2>📸 ფოტოგალერეა:</h2>
+        <div class="gallery">
+            <img src="road.jpg" alt="ასფალტირებული გზა">
+            <img src="land.jpg" alt="მიწის ნაკვეთი">
+            <img src="gate.jpg" alt="შესასვლელი">
+            <img src="map.jpg" alt="საკადასტრო რუკა">
+            <img src="document.jpg" alt="ამონაწერი">
+        </div>
+
+        <h2>📍 მდებარეობის უპირატესობები:</h2>
+        <ul class="features">
+            <li><strong>ლოკაცია:</strong> მდებარეობს უშუალოდ ცენტრალური ასფალტირებული გზის პირას.</li>
+            <li><strong>ქუთაისის აეროპორტიდან:</strong> სულ რაღაც 7 კილომეტრში.</li>
+            <li><strong>კომუნიკაციები:</strong> ელ. ენერგია, წყალი და გაზი ნაკვეთთანვეა.</li>
+            <li><strong>იურიდიული სტატუსი:</strong> გატარებულია საჯარო რეესტრში, სრულად სუფთა საბუთებით (საკ. კოდი: 29.11.36.455).</li>
+        </ul>
+
+        <h2>🏪 ინფრასტრუქტურა (500 მეტრის რადიუსში):</h2>
+        <div class="infra-grid">
+            <div class="infra-item">🏛️ გამგეობა / ადმინისტრაცია</div>
+            <div class="infra-item">🏥 ამბულატორია</div>
+            <div class="infra-item">👶 საბავშვო ბაღი</div>
+            <div class="infra-item">🏫 სკოლა</div>
+            <div class="infra-item">🛒 სუპერმარკეტები</div>
+            <div class="infra-item">🚂 რკინიგზის ბაქანი</div>
+        </div>
+
+        <div class="highlight-box">
+            <strong>🏛️ მშენებლობისა და ბიზნესის შესაძლებლობები:</strong><br>
+            წყალტუბოს მერიის მიერ <strong>უპრობლემოდ გაიცემა მშენებლობის ნებართვა</strong> როგორც საცხოვრებელი სახლისთვის, ისე ნებისმიერი კომერციული ობიექტისთვის (საოჯახო სასტუმრო, კოტეჯები, მარკეტი, საწყობი და ა.შ.).
+        </div>
+
+        <a href="tel:591060320" class="contact-btn">📞 დარეკვა: 591 06 03 20</a>
     </div>
-
-    <a href="tel:" class="contact-btn">📞 დარეკვა / დეტალები</a>
-</div>
 
 </body>
 </html>
